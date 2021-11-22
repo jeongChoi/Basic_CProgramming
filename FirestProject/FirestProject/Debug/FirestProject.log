@@ -1,0 +1,6 @@
+﻿  condition_operatort.c
+  input_varBasic.c
+  output_varBasic.c
+C:\Users\user\C\FirestProject\FirestProject\output_varBasic.c(12,1): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  코드를 생성하고 있습니다...
+  FirestProject.vcxproj -> C:\Users\user\C\FirestProject\Debug\FirestProject.exe
