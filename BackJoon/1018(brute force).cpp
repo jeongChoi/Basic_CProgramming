@@ -4,36 +4,51 @@
 
 int replace(char** a) {
 	
-	int count = 0;
+	int count1 = 0;
+	int count2 = 0;
 
 	for (int i = 0; i < 8; i++) {
-		for (int j = 0; j < 7; j++) {
-			if (i > 0 && j == 0) {
-				if (a[i - 1][j] == a[i][j]) {
-					if (a[i - 1][j] == 'B') {
-						a[i][j] = 'W';
-						count++;
+		for (int j = 0; j < 8; j++) {
+			if (i % 2 == 0) {
+				if (j % 2 == 0) {
+					if (a[i][j] == 'W') {
+						count1++;
 					}
 					else {
-						a[i][j] = 'B';
-						count++;
+						count2++;
+					}
+				}
+				else {
+					if (a[i][j] == 'B') {
+						count1++;
+					}
+					else {
+						count2++;
 					}
 				}
 			}
-			if (a[i][j] == a[i][j + 1]) {
-				if (a[i][j] == 'B') {
-					a[i][j + 1] = 'W';
-					count++;
+			else {
+				if (j % 2 == 0) {
+					if (a[i][j] == 'B') {
+						count1++;
+					}
+					else {
+						count2++;
+					}
 				}
 				else {
-					a[i][j + 1] = 'B';
-					count++;
+					if (a[i][j] == 'W') {
+						count1++;
+					}
+					else {
+						count2++;
+					}
 				}
 			}
 		}
 	}
 
-	return count;
+	return count1>count2 ? count2 : count1;
 }
 
 int main(void) {
