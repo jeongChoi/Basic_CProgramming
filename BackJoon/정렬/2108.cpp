@@ -93,15 +93,15 @@ int main(void) {
 		}
 	}
 
-	printf("%.f\n", round((float)sum / n)); // Æò±Õ
+	printf("%.f\n", round((float)sum / n)); // Ã†Ã²Â±Ã•
 
 	morge_sort(arr, 0, n-1);
 
-	printf("%d\n", arr[n / 2]); // Áß¾Ó°ª;
+	printf("%d\n", arr[n / 2]); // ÃÃŸÂ¾Ã“Â°Âª;
 
 	printf("%d\n", k[kk-1]);
 
-	printf("%d\n", abs(arr[n - 1] - arr[0])); // ¹üÀ§
+	printf("%d\n", abs(arr[n - 1] - arr[0])); // Â¹Ã¼Ã€Â§
 
 	return 0;
 }
