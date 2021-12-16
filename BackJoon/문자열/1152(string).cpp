@@ -8,7 +8,7 @@ int main(void)
     int cnt = 0;
 
 
-    scanf("%[^\n]", sent); // ¿£ÅÍ°¡ ³ª¿Ã¶§±îÁö ¹®ÀÚ¿­·Î ¹Ş´Â´Ù.
+    scanf("%[^\n]", sent); // ì—”í„°ê°€ ë‚˜ì˜¬ë•Œê¹Œì§€ ë¬¸ìì—´ë¡œ ë°›ëŠ”ë‹¤.
 
     int length = strlen(sent);
     // printf("%d\n", length);
