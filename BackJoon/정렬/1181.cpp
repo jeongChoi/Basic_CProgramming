@@ -20,7 +20,7 @@ void insertSort(StrArr s[], int n) {
 				s[j + 1] = s[j];
 			}
 			else if (s[j].len == arr.len) {
-				if (strcmp(s[j].str, arr.str) == -1) {
+				if (strcmp(s[j].str, arr.str) <= -1) {
 					break;
 				}
 				else {
